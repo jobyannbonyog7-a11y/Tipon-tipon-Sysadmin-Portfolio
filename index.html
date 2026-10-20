@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>System Administrator Career Portfolio | Ivy Joy C. Tipon-tipon</title>
+<meta name="description" content="Career portfolio about the System Administrator profession.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="fairy" aria-hidden="true"></canvas>
+<header class="nav" id="nav">
+  <a href="#home" class="logo" aria-label="Ivy Joy Tipon-tipon home">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19h16M6 19V8l6-4 6 4v11M9 19v-6h6v6M9 9h.01M15 9h.01"/></svg>
+    <span>SysAdmin<span class="logo-accent">Portfolio</span></span>
+  </a>
+  <button class="burger" id="burger" type="button" aria-label="Open navigation menu" aria-controls="menu" aria-expanded="false">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+  </button>
+  <nav id="menu">
+    <a href="#home" data-i18n="nav_home">Home</a>
+    <a href="#roles" data-i18n="nav_roles">Roles</a>
+    <a href="#skills" data-i18n="nav_skills">Skills</a>
+    <a href="#tools" data-i18n="nav_tools">Tools</a>
+    <a href="#terminal" data-i18n="nav_term">Terminal</a>
+    <a href="#about" data-i18n="nav_about">About</a>
+    <label class="language">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>
+      <select id="lang" aria-label="Language">
+        <option value="en">English</option>
+        <option value="fil">Filipino</option>
+      </select>
+    </label>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-text">
+    <p class="kicker" data-i18n="hero_k">Career Portfolio · Fundamentals</p>
+    <h1 data-i18n="hero_t">Web-Based System Administrator Career Portfolio</h1>
+    <p class="typing"><span id="typed"></span><i class="caret"></i></p>
+    <p class="lead" data-i18n="hero_p">A System Administrator keeps computers, servers and networks running smoothly so that everyone else can do their work. They install, secure, monitor and repair the systems an organization depends on every day.</p>
+    <div class="cta">
+      <a class="btn" href="#roles" data-i18n="cta1">Explore the career</a>
+      <a class="btn ghost" href="#terminal" data-i18n="cta2">Try the terminal</a>
+    </div>
+  </div>
+  <div class="hero-art" aria-label="System monitoring dashboard illustration" role="img">
+    <div class="dashboard">
+      <div class="dashboard-top"><span></span><span></span><span></span><b>System overview</b></div>
+      <div class="dashboard-body">
+        <div class="server-visual">
+          <div class="server-unit"><i></i><span></span><span></span></div>
+          <div class="server-unit"><i></i><span></span><span></span></div>
+          <div class="server-unit"><i></i><span></span><span></span></div>
+        </div>
+        <div class="status-panel">
+          <div class="status-label"><i></i> All systems operational</div>
+          <div class="metric"><span>CPU usage</span><b>24%</b><i><em></em></i></div>
+          <div class="metric"><span>Memory</span><b>68%</b><i><em></em></i></div>
+          <div class="metric"><span>Network</span><b>Stable</b><i><em></em></i></div>
+        </div>
+      </div>
+      <div class="dashboard-foot"><span>SERVER STATUS</span><b>ONLINE</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="roles"><h2 data-i18n="roles_h">Roles and Responsibilities</h2><div class="grid" id="rolesGrid"></div></section>
+<section id="skills"><h2 data-i18n="skills_h">Technical and Professional Skills</h2><div class="grid" id="skillsGrid"></div></section>
+<section id="tools"><h2 data-i18n="tools_h">System Administration Tools</h2><div class="grid" id="toolsGrid"></div></section>
+
+<section id="terminal">
+  <h2 data-i18n="term_h">Try a Linux Command Prompt</h2>
+  <p class="sub" data-i18n="term_p">Type commands like help, ls, whoami, neofetch or top. Press ↑ for history and Tab to autocomplete.</p>
+  <div class="term" id="term">
+    <div class="bar"><b></b><b></b><b></b><span>ivy@ubuntu-server: ~</span></div>
+    <div class="out" id="out"></div>
+    <div class="line"><span class="ps" id="ps"></span><input id="cmd" autocomplete="off" spellcheck="false" aria-label="Command"></div>
+  </div>
+  <div class="chips" id="chips"></div>
+</section>
+
+<section id="about">
+  <h2 data-i18n="about_h">About the Developer</h2>
+  <div class="about">
+    <div class="frame-wrap" id="tilt">
+      <div class="frame">
+        <img src="images 0512.jpg" alt="Portrait of Ivy Joy C. Tipon-tipon">
+      </div>
+    </div>
+    <div class="about-text">
+      <h3>Ivy Joy C. Tipon-tipon</h3>
+      <p class="prog" data-i18n="about_prog">Course / Program: [Your course here]</p>
+      <p data-i18n="about_p1">Hello! I am a student who enjoys building websites and learning how computers and networks work behind the scenes.</p>
+      <p data-i18n="about_p2">I am interested in the IT industry because every organization depends on technology, and I want to be one of the people who keeps it reliable, secure and helpful.</p>
+    </div>
+  </div>
+</section>
+</main>
+<footer>© 2026 Ivy Joy C. Tipon-tipon · <span data-i18n="foot">System Administration Career Portfolio</span></footer>
+<script src="script.js"></script>
+</body>
+</html>
